@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Image Gallary</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="w-1/2 bg-green-400 p-4">Flexbox Item 1</div>
+            <div class="w-1/2 bg-green-300 p-4">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+        <section class="lg:col-span-3 flex flex-col lg:flex-row">
+            <div class="w-full w-1/3 bg-red-200 p-2 m-2">Image 1</div>
+            <div class="w-full w-1/3 bg-red-400 p-2 m-2">Image 2</div>
+            <div class="w-full w-1/3 bg-red-200 p-2 m-2">Image 3</div>
+        </section> 
+        <section class="lg:col-span-3 flex flex-col lg:flex-row">
+            <div class="w-full w-1/3 bg-red-200 p-2 m-2">Image 4</div>
+            <div class="w-full w-1/3 bg-red-400 p-2 m-2">Image 5</div>
+            <div class="w-full w-1/3 bg-red-200 p-2 m-2">Image 6</div>
+        </section>      
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
