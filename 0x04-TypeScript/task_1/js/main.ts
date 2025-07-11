@@ -28,5 +28,14 @@ const teacher2: Teacher = {
   specialization: "Mathematics"
 };
 
-console.log(teacher1);
-console.log(teacher2);
+interface Directors {
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
+  [key: string]: any;   
+  numberOfReports: number;
+}
+
+
